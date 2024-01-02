@@ -68,7 +68,13 @@ public class Phonebook_Test {
             assertEquals("09123456789", person.getPhone()); // Ensure number is unchanged
         }
 
-      
+    @Test
+    void setHiddenTest() {
+        person.setHidden();
+        assertTrue(person.isHidden());
+    }
+
+  
     }
 
 

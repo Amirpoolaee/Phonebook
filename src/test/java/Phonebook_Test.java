@@ -74,7 +74,16 @@ public class Phonebook_Test {
         assertTrue(person.isHidden());
     }
 
-  
+    @Test
+    void setUnHiddenTest() {
+        // First, set the contact to hidden
+        person.setHidden();
+        // Now, set it to not hidden
+        person.setUnHidden();
+
+        assertFalse(person.isHidden());
+    }
+
     }
 
 

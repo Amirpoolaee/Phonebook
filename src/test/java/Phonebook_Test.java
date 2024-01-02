@@ -34,7 +34,35 @@ public class Phonebook_Test {
             assertEquals("John Doe", person.getName());
         }
 
-        
+        @Test
+        void getPhoneTest() {
+            assertEquals("09123456789", person.getPhone());
+        }
+
+        @Test
+        void getIdTest() {
+            // Since we reset the identifier to 1 in setUp and then created a Person object, the id of the first person should be 1.
+            assertEquals(1, person.getId());
+        }
+
+        @Test
+        void isHiddenTest_InitiallyFalse() {
+            assertFalse(person.isHidden());
+        }
+
+        @Test
+        void setNameTest() {
+            person.setName("Jane Doe");
+            assertEquals("Jane Doe", person.getName());
+        }
+
+        @Test
+        void setPhoneTest_ValidPhone_AssignsPhone() {
+            person.setPhone("09234567890");
+            assertEquals("09234567890", person.getPhone());
+        }
+
+   
     }
 
 

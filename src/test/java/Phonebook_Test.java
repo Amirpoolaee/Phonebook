@@ -84,6 +84,11 @@ public class Phonebook_Test {
         assertFalse(person.isHidden());
     }
 
+    @Test
+    void toStringTest() {
+        String expectedString = "Name: John Doe - Phone number: 09123456789";
+        assertEquals(expectedString, person.toString());
+    }
     }
 
 

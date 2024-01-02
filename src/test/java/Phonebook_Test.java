@@ -62,7 +62,13 @@ public class Phonebook_Test {
             assertEquals("09234567890", person.getPhone());
         }
 
-   
+        @Test
+        void setPhoneTest_InvalidPhone_NoChange() {
+            person.setPhone("0123"); // Invalid phone format
+            assertEquals("09123456789", person.getPhone()); // Ensure number is unchanged
+        }
+
+      
     }
 
 

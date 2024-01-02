@@ -5,7 +5,6 @@ public class Person {
     private final int id;
     private boolean isHidden;
 
-
     public Person(String name, String phone) {
         this.name = name;
         try {

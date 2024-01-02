@@ -29,6 +29,12 @@ public class Phonebook_Test {
             assertFalse(person.isHidden());
         }
 
+        @Test
+        void getNameTest() {
+            assertEquals("John Doe", person.getName());
+        }
+
+        
     }
 
 
